@@ -10,9 +10,9 @@ function clock(){
 	let hour=dateData.getHours();
 	let min=dateData.getMinutes();
 	let sec=dateData.getSeconds();
-	let ampm;
-	hour=(hour>12) ? hour-12 : hour;
+	let ampm;	
 	(hour>12) ? ampm='PM' : ampm='AM';
+	hour=(hour>12) ? hour-12 : hour;
 	time.innerHTML=`${date}/${month}/${year}, ${hour}:${min}:${sec} ${ampm}`
 }
 clock();
